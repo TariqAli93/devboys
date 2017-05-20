@@ -1,5 +1,28 @@
 body {
 	background: #333;
+	overflow-x: hidden;
+}
+.sidebar_overlay {
+	background-color: black;
+	opacity: .2;
+	-webkit-user-select: none ;
+	-moz-user-select: none ;
+	-ms-user-select: none ;
+	-o-user-select: none ;
+	user-select: none ;
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+@media (min-width: 768px) {
+	.sidebar_overlay {
+		display: none;
+	}
 }
 
 .__navbar {
@@ -158,6 +181,8 @@ body {
 	text-align: center;
 }
 
+
+
 .header .intro img {
 	display: block;
 	width: 150px;
@@ -216,4 +241,18 @@ body {
 .header .intro .intro_btn:focus {
 	background-color: white;
 	color: black;
+}
+
+
+@media (max-width: 768px) {
+	.header .intro {
+		display: block;
+		width: 100%;
+	}
+
+	.header .intro .description {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+	}
 }
