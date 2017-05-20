@@ -49,6 +49,16 @@ body {
 	height: 100%;
 }
 
+.__navbar .navbar-header .navbar-toggle {
+	background-color: transparent;
+	border: none;
+}
+
+.__navbar .navbar-header .navbar-toggle:hover,
+.__navbar .navbar-header .navbar-toggle:focus {
+	background-color: transparent;
+}
+
 .__navbar .nav-container .navbar-nav {
 	margin-top: 15px;
 }
